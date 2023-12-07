@@ -14,7 +14,7 @@ body {
 .header {
 	background: rgba(255, 255, 255, 0.75);
 	padding: 25px 0;
-	position: sticky;
+	height: 100px;
 }
 .row {
 	margin: 0 -15px;
@@ -127,13 +127,11 @@ body {
 	line-height: 20px;
 }
 
-.sub__menu {
-	display: none;
-	
+.menu__items .sub__menu{
+display: none;
 }
-.menu .menu__items:hover .sub__menu {
-	display: block;
-
+.menu__items:hover .sub__menu {
+display: block;
 }
 .sub__menu .items {
 	width: 285px;
