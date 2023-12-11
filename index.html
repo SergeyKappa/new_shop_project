@@ -13,10 +13,15 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
 			rel="stylesheet"
 		/>
-		  <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<!-- slide -->
+		<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 	</head>
 	<body>
 		<header class="header">
@@ -31,16 +36,18 @@
 						<nav>
 							<ul class="menu">
 								<li class="menu__items"><a href="">Home</a></li>
-								<li class="menu__items"><a href="">Products <i class="fa fa-angle-down"></i></a>
-                                <ul class="sub__menu">
-                                    <li class="items"><a href="">Lorem ipsum dolor</a></li>
-                                    <li class="items"><a href="">Sit amet</a></li>
-                                    <li class="items"><a href="">Lorem ipsum</a></li>
-                                    <li class="items"><a href="">Fedhy pipipsum</a></li>
-                                    <li class="items"><a href="">Lorem ipsum fodolor</a></li>
-                                    <li class="items"><a href="">Lorem pipsum vedolor.</a></li>
-                                    <li class="items"><a href="">Lorem sit amet</a></li>
-                                </ul></li>
+								<li class="menu__items">
+									<a href="">Products <i class="fa fa-angle-down"></i></a>
+									<ul class="sub__menu">
+										<li class="items"><a href="">Lorem ipsum dolor</a></li>
+										<li class="items"><a href="">Sit amet</a></li>
+										<li class="items"><a href="">Lorem ipsum</a></li>
+										<li class="items"><a href="">Fedhy pipipsum</a></li>
+										<li class="items"><a href="">Lorem ipsum fodolor</a></li>
+										<li class="items"><a href="">Lorem pipsum vedolor.</a></li>
+										<li class="items"><a href="">Lorem sit amet</a></li>
+									</ul>
+								</li>
 								<li class="menu__items"><a href="">Payments</a></li>
 								<li class="menu__items"><a href="">Shipping</a></li>
 							</ul>
@@ -50,7 +57,7 @@
 						<div class="row">
 							<div class="col-9">
 								<div class="search">
-									<input type="text" placeholder="search"/>
+									<input type="text" placeholder="search" />
 									<button></button>
 								</div>
 							</div>
@@ -64,7 +71,40 @@
 				</div>
 			</div>
 		</header>
-		<main class="main">main</main>
+		<main class="main">
+				<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">Slide #1</div>
+    <div class="swiper-slide">Slide #2</div>
+    <div class="swiper-slide">Slide #3</div>
+  </div>
+
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+</div>
+		
+		</main>
 		<footer class="footer">footer</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script>
+			const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+		</script>
 	</body>
 </html>

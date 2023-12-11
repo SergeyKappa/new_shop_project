@@ -61,10 +61,10 @@ body {
 	position: relative;
 	border-left: 1px solid #2c71b8;
 }
- .menu__items:last-child {
+.menu__items:last-child {
 	border-right: 1px solid #2c71b8;
 }
- .menu__items a {
+.menu__items a {
 	display: block;
 	height: 50px;
 	text-align: center;
@@ -81,7 +81,6 @@ body {
 
 .search {
 	border: 1px solid #2c71b8;
-	
 }
 .search input {
 	width: 130px;
@@ -149,10 +148,9 @@ body {
 	position: relative;
 	top: -15px;
 }
- .items {
+.items {
 	width: 285px;
 	background-color: #2c71b8;
-	
 }
 .items a {
 	width: 100%;
@@ -168,4 +166,22 @@ body {
 	background-color: white;
 	color: #2c71b8;
 	display: block;
+}
+/* slider */
+.swiper {
+  width: 100%;
+  height: 400px;
+  background-color: #235993a9;
+  line-height: 400px;
+}
+.swiper-slide{
+	color: #fff;
+	font-size: 100px;
+	text-align: center;
+}
+.swiper-button-prev,
+.swiper-button-next{
+	margin: 0 170px;
+	transition: .1s;
+
 }
