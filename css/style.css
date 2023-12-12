@@ -143,7 +143,7 @@ body {
 .sub__menu{
 	position: absolute;
 	display: none;
-	width: 203%;
+	width: 201%;
 }
 .menu__items{
 	position: relative;
@@ -151,10 +151,9 @@ body {
 
 .menu__items:hover .sub__menu  {
 	display: block;
-	padding-top: 40px;
 	position: absolute;
 	border: none;
-	top: 35px;
+	top: 50px;
 	z-index: 10;
 }
 .items {
