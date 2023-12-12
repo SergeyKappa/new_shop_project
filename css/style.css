@@ -142,11 +142,13 @@ body {
 .menu__items .sub__menu {
 	display: none;
 }
-.menu__items:hover .sub__menu {
+.menu__items:hover .sub__menu  {
 	display: block;
 	padding-top: 40px;
-	position: relative;
-	top: -15px;
+	position: fixed;
+	border: none;
+	top: 60px;
+	z-index: 10;
 }
 .items {
 	width: 285px;
@@ -170,7 +172,7 @@ body {
 /* slider */
 .swiper {
   width: 100%;
-  height: 400px;
+min-height: 400px;
   background-color: #235993a9;
   line-height: 400px;
 }
