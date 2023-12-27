@@ -278,7 +278,6 @@ label {
 
 label::before {
 	content: "";
-
 	width: 10px;
 	height: 10px;
 	border: 1px solid white;
@@ -346,7 +345,6 @@ label::before {
 
 .product {
 	margin-top: 30px;
-
 	width: 268px;
 	height: 650px;
 	background-color: rgba(44, 113, 184, 0.75);
